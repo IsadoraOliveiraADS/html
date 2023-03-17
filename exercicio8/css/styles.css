@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+/*Estilo do body*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.anotacao{
+    background-color: #000000;
+    padding: 5px;
+    text-align: center;
+    color: #f1f1f1;
+}
+.cabecalho{
+    padding: 60px;
+    text-align: center;
+    background-image: url(../imagem/imagemdesktop.jpg);
+    background-size: cover;
+    color: aliceblue;
+}
+/*Estilo da barra de Navegação*/
+.barra_nav{
+    display: flex;
+    background-color: black;
+}
+/*Estilo dos links da barra de navegação*/
+.barra_nav a{
+    color: aliceblue;
+    padding: 14px 10px;
+text-decoration: none;
+text-align: center;
+}
+
+/*trocar a cor de fundo quando o cursor passar por cima do link*/
+.barra_nav a:hover{
+    background-color:aliceblue;
+    color: #000000;
+}
+/*Configurar a div da coluna*/
+.coluna{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*criar duas colunas iguais (30 e 70%)*/
+.lateral{
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.principal{
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/*Imagens falsas apenas para marcação de espaço*/
+.imagem_falsa{
+    background-color: #393737;
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+}
+.imagem_falsa2{
+    background-color: rgb(120, 116, 116);
+    width: 100%;
+    padding: 20px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+.imagem_falsa3{
+    background-color: rgb(142, 139, 139);
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+}
+.rodape{
+    max-height: fit-content;
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+    background-color: #000000;
+}
+@media screen and (max-width: 500px) {
+    .coluna, .barra_nav {
+        flex-direction: column;
+    }
+ 
+.cabecalho{
+    background-image: url(../imagem/imagemcelular.jpg);
+    background-size: cover;
+    color: white;
+}
+}
